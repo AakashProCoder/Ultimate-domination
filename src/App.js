@@ -9,7 +9,7 @@ function AnimatedRoutes() {
 
   return (
     <TransitionGroup>
-      <CSSTransition key={location.key} classNames="fade" timeout={300}>
+      <CSSTransition key={location.key} classNames="scale" timeout={300}>
         <Routes location={location}>
           <Route path="/" element={<FlashScreen />} />
           <Route path="/home" element={<Menu />} />
