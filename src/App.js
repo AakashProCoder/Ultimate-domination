@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes, useLocation } from "react-router-dom";
+import "./App.css";
+import FlashScreen from "./Pages/flashScreen/FlashScreen";
+import Layout from "./layout/Layout";
+import Menu from "./Pages/Home/Menu";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+function AnimatedRoutes() {
+  const location = useLocation();
 
+  return (
+    <TransitionGroup>
+      <CSSTransition key={location.key} classNames="fade" timeout={300}>
+        <Routes location={location}>
+          <Route path="/" element={<FlashScreen />} />
+          <Route path="/home" element={<Menu />} />
+        </Routes>
+      </CSSTransition>
+    </TransitionGroup>
+  );
+}
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Layout>
+        <AnimatedRoutes />
+      </Layout>
     </div>
   );
 }

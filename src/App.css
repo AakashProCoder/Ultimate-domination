@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
+}
+.activeBtn:active {
+  box-shadow: none !important;
+  transform: translateY(8px) !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primary-txt-color: #fff;
+}
+@font-face {
+  font-family: Gogono;
+  src: url(../src/assets/fonts/gomarice_gogono_cocoa_mochi.ttf);
+  font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* for route transaction */
+.fade-enter {
+  background-color: black;
+  opacity: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 600ms ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.fade-exit {
+  opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 6ms ease-in-out;
 }
