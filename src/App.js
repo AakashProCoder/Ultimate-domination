@@ -4,6 +4,7 @@ import FlashScreen from "./Pages/SplashScreen/SplashScreen";
 import Layout from "./layout/Layout";
 import Menu from "./Pages/Home/Menu";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
+import Playground from "./Pages/Playground/Playground";
 function AnimatedRoutes() {
   const location = useLocation();
 
@@ -13,6 +14,7 @@ function AnimatedRoutes() {
         <Routes location={location}>
           <Route path="/" element={<FlashScreen />} />
           <Route path="/home" element={<Menu />} />
+          <Route path="/playground" element={<Playground />} />
         </Routes>
       </CSSTransition>
     </TransitionGroup>

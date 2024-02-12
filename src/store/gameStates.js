@@ -8,4 +8,7 @@ const gameStates = createSlice({
     players: players,
     countries,
   },
+  reducers: {},
 });
+export default gameStates.reducer;
+export const gameStateSlice = gameStates.actions;

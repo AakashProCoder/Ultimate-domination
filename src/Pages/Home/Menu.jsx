@@ -10,11 +10,14 @@ import storeIcon from "../../assets/images/store.png";
 import inventryIcon from "../../assets/images/inventory.png";
 import { UseDispatch } from "react-redux";
 import { homeScreenAction } from "../../store/homeScreemUi";
+import { useNavigate } from "react-router-dom";
+
 function Menu() {
   function openSetting() {}
   function openShope() {}
   function openInventry() {}
   function openHelp() {}
+  const navigate = useNavigate();
   return (
     <HalfMap>
       <div className="manu">
@@ -36,6 +39,9 @@ function Menu() {
           <div
             id="quickplay-btn"
             className="flex modes-btn-txt modes-btn-wh activeBtn"
+            onClick={() => {
+              navigate("/playground");
+            }}
           >
             Quick Play
           </div>
