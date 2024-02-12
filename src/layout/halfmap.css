@@ -1,0 +1,13 @@
+.halfmap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+  background: url("../assets/images/half-map.png");
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 100%;
+}
