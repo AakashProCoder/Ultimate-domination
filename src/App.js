@@ -1,6 +1,6 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
-import FlashScreen from "./Pages/flashScreen/FlashScreen";
+import FlashScreen from "./Pages/SplashScreen/SplashScreen";
 import Layout from "./layout/Layout";
 import Menu from "./Pages/Home/Menu";
 import { TransitionGroup, CSSTransition } from "react-transition-group";

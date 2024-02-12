@@ -1,0 +1,115 @@
+.main {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.player-profile-container {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  position: relative;
+  margin: 1rem 0;
+}
+#player-profile-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.main p {
+  font-family: Gogono;
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--primary-txt-color);
+}
+.profile-picture-edit-bg {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #4765ee 0%, #2b5adc 100%);
+  box-shadow: 0px 4px 0px 0px #0f269e;
+  position: absolute;
+  right: 1%;
+  top: 5%;
+  cursor: pointer;
+}
+#profile-picture-icon {
+  width: 58%;
+  height: 58%;
+}
+.modes-btn-txt {
+  color: var(--primary-txt-color);
+  font-family: Gogono;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  -webkit-text-stroke: 1px #0f259e;
+  text-transform: capitalize;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
+  cursor: pointer;
+}
+.modes-btn-wh {
+  width: 21%;
+  /* min-width: 25rem 
+rem
+; */
+  height: 3rem;
+}
+#quickplay-btn {
+  border-radius: 20px;
+  background: linear-gradient(180deg, #4a79f8 0%, #1548c6 100%);
+  box-shadow: 0px 8px 0px 0px #0a3995;
+}
+
+#singleplayer-btn {
+  margin: 1.5rem 0;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #fe7400 0%, #c84900 100%);
+  box-shadow: 0px 8px 0px 0px #95340a;
+}
+
+#multiplayer-btn {
+  border-radius: 20px;
+  background: linear-gradient(180deg, #f84a4a 0%, #c61515 100%);
+  box-shadow: 0px 8px 0px 0px #950a0a;
+}
+.footerIcons {
+  justify-content: space-between;
+}
+.footerIcons img{
+    width: 2rem;
+    height: 2rem;
+
+}
+.left-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  position: absolute;
+  top: 78%;
+  left: 2%;
+  
+}
+.rigth-icons {
+  position: absolute;
+  flex-direction: column;
+  gap: 1rem;
+  top: 78%;
+  right: 2%;
+}
+.footer-buttons {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 17.17px;
+    background: linear-gradient(180deg, #4765ee 0%, #2b5adc 100%);
+    box-shadow: 0px 6.86792px 0px 0px #0f269e;
+    cursor: pointer;
+
+
+}
